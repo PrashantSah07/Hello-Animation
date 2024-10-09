@@ -40,7 +40,7 @@ body {
     from {}
 
     to {
-        transform: translate(135%);
+        transform: translate(165%);
     }
 }
 
@@ -85,10 +85,11 @@ ul {
     color: white;
     display: flex;
     position: absolute;
-    left: 100vh;
-    bottom: -10px;
+    bottom: 0;
+    left: 45vw;
     font-size: 50px;
     column-gap: 40px;
+    width: 90vw;
 }
 
 li:first-child {
@@ -157,5 +158,52 @@ li:nth-child(4) {
 
     to {
         color: rgb(1, 254, 34);
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .hello {
+        font-size: 5rem;
+    }
+
+    @keyframes motion2 {
+        from {}
+
+        to {
+            transform: translate(205%);
+        }
+    }
+}
+
+@media only screen and (max-width:750px) {
+
+    @keyframes motion {
+        0% {
+            transform: translate(-135%);
+        }
+    }
+
+    @keyframes motion2 {
+        from {}
+
+        to {
+            transform: translate(205%);
+        }
+    }
+}
+
+@media only screen and (max-width:400px) {
+
+    .hello {
+        font-size: 4rem;
+        position: relative;
+        top: -20px;
+    }
+
+    ul {
+        top: 35vh;
+        left: 30vw;
+        font-size: 45px;
+        column-gap: 30px;
     }
 }
